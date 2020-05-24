@@ -1,0 +1,338 @@
+/***************** GENERAL ***************/
+body {
+  font-family:  'Architects Daughter', cursive;
+  font-size: 2rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+main {
+  background: linear-gradient(to bottom, transparent, transparent,), rgba(128, 128, 128, 0.212);
+}
+/***************** HEADER ****************/
+header {
+  background:rgb(255, 0, 0);
+  text-align: center;
+  padding-top: 15px;
+  width: 100%;
+  box-shadow: 0px 3px 3px 2px rgba(255, 255, 255, 0.5);
+}
+
+header ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul li {
+  display: inline-block;
+}
+
+header ul li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+}
+header img {
+  width: 15%;
+  padding-top: 5px;
+}
+
+/**************** NAV *******************/
+nav {
+padding: 10px 0;
+}
+
+/************** HERO ********************/
+.hero-caption {
+  text-align: center;
+  padding: 120px 20px;
+}
+
+#hero {
+  color: rgb(255, 0, 0);
+  position: relative;
+ 
+}
+
+#hero::after {
+  background-image: linear-gradient(0deg, #fff, transparent), url("../immagini/background.jpg");
+  background-size: cover;
+  background-position: center;
+  content: "";
+  width: 100%;
+  height: 500px;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  transform: skew(-5deg, 0deg);
+}
+
+.btn {
+  background:rgb(255, 0, 0);
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  background-position-y: 25%;
+  border: solid red;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  animation: sparisci 2s linear alternate ;
+}
+
+.btn:hover {
+  background: #ff8282;
+}
+
+#hero h1 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  animation: h1 1s linear;
+}
+
+#hero h2 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  animation: h2 1s linear;
+}
+
+/************** KEYFRAMES ***************/
+@keyframes sparisci {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes h1 {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes h2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+/************** GALLERY *****************/
+.immagine img {
+  width: 100%;
+}
+
+.immagine {
+  box-shadow: 5px 2px 3px 2px rgba(0, 0, 0, 0.5);
+}
+
+#gallery {
+  padding: 20px;
+  background: linear-gradient(to bottom, #fff, transparent), rgba(128, 128, 128, 0.212);
+  border-radius: 20px;
+  box-shadow: 5px 2px 3px rgba(0, 0, 0, 0.5);
+  margin: 10px 10px 0 10px;
+}
+
+#gallery .item {
+  width: 50%;
+  float: left;
+  padding: 10px;
+  line-height: 0;
+}
+
+.item .caption {
+  background: rgba(255, 0, 0, 0.699);
+}
+
+.item .caption p {
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  color: white;
+
+}
+
+/************* ABOUT *******************/
+#about {
+  text-align: center;
+  padding: 50px;
+  background: linear-gradient(to bottom, #fff, transparent), rgba(128, 128, 128, 0.212);
+  margin-top: 10px;
+}
+
+#about p {
+  width: 100%;
+  padding: 0 auto;
+}
+ 
+#about h1 {
+ font-size: 3rem;
+ text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+/************ ANIMATIONS ***************/
+
+
+/************ CONTACT ******************/
+#contact {
+  text-align: center;
+  padding-bottom: 50px;
+  background: linear-gradient(to top, #fff, transparent), rgba(128, 128, 128, 0.212);
+}
+
+#contact ul {
+  list-style-type: none;
+  padding: 0;
+  display: inline-block;
+}
+
+#contact ul li {
+ padding: 5px 0;
+}
+
+#contact li a {
+  color: black;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+#contact .material-icons {
+  float: left;
+  padding-right: 10px;
+}
+
+/************* VIDEO *******************/
+#video {
+  padding: 20px;
+}
+
+
+#video video {
+width: 100%;
+border-radius: 20px;
+box-shadow: 5px 3px 2px 1px rgba(0, 0, 0, 0.5);
+} 
+
+.about-video {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 30px 0 20px 0;
+}
+
+.about-video h2 {
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/************* FOOTER ******************/
+footer {
+  text-align: center;
+  background: linear-gradient(to bottom, #fff, transparent), rgba(128, 128, 128, 0.212);
+  padding-bottom: 10px;
+}
+
+footer img {
+  width: 50px;
+}
+
+footer p {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/*********** BREAKPOINT ***************/
+@media only screen and (min-width: 768px) {
+  #gallery .immagine:hover {
+    transform: scale(1.2,1.2);
+  }
+
+
+  #gallery .item {
+    width: 33.3333%;
+  }
+
+  nav li a:hover {
+    background: #ff8282;
+    border-radius: 15px;
+  }
+
+  nav li a {
+    transition: background 0.5s;
+  }
+  
+  #gallery .item:hover {
+    opacity: 70%;
+  }
+
+  #gallery .item {
+    transition: opacity 0.5s;
+  }
+
+header {
+ padding: 10px 0;
+ display: flex;
+ justify-content: space-around;
+ align-items: center;
+ position: fixed;
+ z-index: 1;
+}
+
+header img {
+  width: 50px;
+}
+
+main {
+  padding-top: 81px;
+}
+.about-video {
+  font-size: 2rem;
+  text-align: center;
+  padding: 50px;
+}
+
+}
+
+
+@media only screen and (min-width: 992px) {
+  #video .container {
+    position: relative;
+    bottom: 500px;
+  }
+  
+  .about-video {
+    padding: 100px 200px;
+    width: 100%;
+    
+    position: absolute;
+   }
+
+
+}
+
+
