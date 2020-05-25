@@ -267,6 +267,13 @@ footer p {
 
 
 /*********** BREAKPOINT ***************/
+
+@media only screen and (max-width: 768px) {
+  #gallery .caption p {
+    font-size: 1.2rem;
+ }
+ }
+ 
 @media only screen and (min-width: 768px) {
   #gallery .immagine:hover {
     transform: scale(1.2,1.2);
