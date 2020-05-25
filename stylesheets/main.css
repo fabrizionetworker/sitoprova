@@ -270,7 +270,8 @@ footer p {
 
 @media only screen and (max-width: 768px) {
   #gallery .caption p {
-    font-size: 1rem;
+    font-size: 1.5rem;
+    padding: 20px 0;
  }
  }
  
