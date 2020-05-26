@@ -78,7 +78,6 @@ padding: 10px 0;
   position: absolute;
   top: 0;
   z-index: -1;
-  transform: skew(-5deg, 0deg);
 }
 
 .btn {
