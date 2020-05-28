@@ -280,7 +280,11 @@ footer p {
  }
 
  nav {
- padding: 5px 0;
+ padding: 10px 0;
+ }
+
+ header img {
+ display: none;
  }
 
  }
