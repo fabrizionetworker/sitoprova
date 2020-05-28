@@ -263,6 +263,10 @@ footer p {
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.social img {
+  display: inline-block;
+  padding: 5px;
+}
 
 
 /*********** BREAKPOINT ***************/
@@ -285,11 +289,6 @@ footer p {
 
  header img {
  display: none;
- }
-
- .social img {
-   display: inline-block;
-   padding: 5px;
  }
 
   #contact {
@@ -342,29 +341,10 @@ header img {
 main {
   padding-top: 81px;
 }
-.about-video {
-  font-size: 2rem;
-  text-align: center;
-  padding: 50px;
+
+#video {
+  padding: 20px 20px 50px 20px;
 }
 
 }
-
-
-@media only screen and (min-width: 992px) {
-  #video .container {
-    position: relative;
-    bottom: 500px;
-  }
-  
-  .about-video {
-    padding: 100px 200px;
-    width: 100%;
-    
-    position: absolute;
-   }
-
-
-}
-
 
