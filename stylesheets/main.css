@@ -287,6 +287,15 @@ footer p {
  display: none;
  }
 
+ .social img {
+   display: inline-block;
+   padding: 5px;
+ }
+
+  .contact {
+    padding-bottom: 20px;
+  }
+  
  }
 
  
